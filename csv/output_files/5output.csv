@@ -1,0 +1,5 @@
+Supplier Name,Invoice Number,Part Number,Cost,Purchase Date
+Supplier X,001-1001,2341,$500.00,1/20/14
+Supplier X,001-1001,2341,$500.00,1/20/14
+Supplier X,001-1001,5467,$750.00,1/20/14
+Supplier X,001-1001,5467,$750.00,1/20/14

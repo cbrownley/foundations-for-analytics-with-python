@@ -1,0 +1,29 @@
+246824 10:40:55 mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
+2014-02-03 10:40:55 98765 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2014-02-03 10:40:55 98765 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2014-02-03 10:40:55 98765 [Note] InnoDB: 5.6.16 started; log sequence number 1234567
+2014-02-03 10:47:18 64208 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2014-02-03 10:47:18 64208 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2014-02-03 10:55:55 64208 [Note] /usr/local/mysql/bin/mysqld: Shutdown complete
+
+135791 15:59:29 mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
+2014-03-07 10:40:55 98765 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2014-03-07 10:40:55 98765 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2014-03-07 10:40:55 98765 [Note] InnoDB: 5.6.16 started; log sequence number 1234567
+2014-03-07 10:47:18 64208 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2014-03-07 10:47:18 64208 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2014-03-07 10:55:55 64208 [Note] /usr/local/mysql/bin/mysqld: Shutdown complete
+
+124578 15:59:29 mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
+2014-10-27 10:40:55 98765 [Note] InnoDB: Completed initialization of buffer pool
+2014-10-27 10:40:55 98765 [Note] InnoDB: IPv6 is available.
+2014-10-27 10:40:55 98765 [Note] InnoDB: 5.6.16 started; log sequence number 1234567
+2014-10-27 10:47:18 64208 [Note] InnoDB: Completed initialization of buffer pool
+2014-10-27 10:47:18 64208 [Note] InnoDB: IPv6 is available.
+2014-10-27 10:55:55 64208 [Note] /usr/local/mysql/bin/mysqld: Shutdown complete
+
+
+
+
+
+

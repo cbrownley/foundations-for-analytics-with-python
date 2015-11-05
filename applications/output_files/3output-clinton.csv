@@ -1,0 +1,4 @@
+Date,InnoDB: Compressed tables use zlib 1.2.3,InnoDB: Using atomics to ref count buffer pool pages,InnoDB: 5.6.16 started; log sequence number 1234567,/usr/local/mysql/bin/mysqld: Shutdown complete,InnoDB: Completed initialization of buffer pool,InnoDB: IPv6 is available.
+2014-10-27,0,0,1,1,2,2
+2014-03-07,3,1,1,1,0,0
+2014-02-03,2,2,1,1,0,0
