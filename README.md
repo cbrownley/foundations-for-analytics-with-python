@@ -3,6 +3,16 @@ foundations-for-analytics-with-python
 
 This repository contains all of the Python scripts, input files, and output files associated with the book, Foundations for Analytics with Python. <br>
 
+About <br>
+https://cbrownley.wordpress.com/2016/03/02/foundations-for-analytics-with-python-from-non-programmer-to-hacker/ <br>
+
+Shop <br>
+<b>O'Reilly Media</b> <br>
+http://shop.oreilly.com/product/0636920038375.do <br>
+
+<b>Amazon</b> <br>
+https://www.amazon.com/Foundations-Analytics-Python-Brownley/dp/1491922532 <br>
+
 to download
 ========================
 <b>Mac computer:</b> <br>
