@@ -37,7 +37,7 @@ to download
 
 <b>Windows computer:</b> <br>
 1. Go to: https://github.com/cbrownley/foundations-for-analytics-with-python <br>
-2. Click 'Download ZIP' in the lower right hand corner of the page <br>
+2. Click 'Clone or download' and then 'Download ZIP' in the right side of the page <br>
 3. Click on the zipped folder to open it in File Explorer <br>
 4. Click 'Extract all' <br>
 5. Edit the path to save the foundations-for-analytics-with-python folder on your Desktop <br>
