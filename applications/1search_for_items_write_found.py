@@ -1,8 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import csv
 import glob
 import os
-import string
 import sys
 from datetime import date
 from xlrd import open_workbook, xldate_as_tuple
@@ -12,13 +11,13 @@ path_to_folder = sys.argv[2]
 output_file = sys.argv[3]
 
 item_numbers_to_find = []
-with open(item_numbers_file, 'rU') as item_numbers_csv_file:
+with open(item_numbers_file, 'r', newline='') as item_numbers_csv_file:
 	filereader = csv.reader(item_numbers_csv_file)
 	for row in filereader:
 		item_numbers_to_find.append(row[0])
-print item_numbers_to_find
+print(item_numbers_to_find)
 
-filewriter = csv.writer(open(output_file, 'ab'))
+filewriter = csv.writer(open(output_file, 'a', newline=''))
 
 file_counter = 0
 line_counter = 0
@@ -26,9 +25,9 @@ count_of_item_numbers = 0
 for input_file in glob.glob(os.path.join(path_to_folder, '*.*')):
 	file_counter += 1
 	if input_file.split('.')[1] == 'csv':
-		with open(input_file, 'rU') as csv_in_file:
+		with open(input_file, 'r', newline='') as csv_in_file:
 			filereader = csv.reader(csv_in_file)
-			header = next(filereader, None)
+			header = next(filereader)
 			for row in filereader:
 				row_of_output = []
 				for column in range(len(header)):
@@ -72,6 +71,6 @@ for input_file in glob.glob(os.path.join(path_to_folder, '*.*')):
 					filewriter.writerow(row_of_output)
 					count_of_item_numbers += 1
 				line_counter += 1
-print 'Number of files:', file_counter
-print 'Number of lines:', line_counter
-print 'Number of item numbers:', count_of_item_numbers
+print('Number of files: {}'.format(file_counter))
+print('Number of lines: {}'.format(line_counter))
+print('Number of item numbers: {}'.format(count_of_item_numbers))

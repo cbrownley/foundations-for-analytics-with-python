@@ -1,6 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import csv
-import string
 import sys
 from datetime import date, datetime
 
@@ -15,7 +14,7 @@ def date_diff(date1, date2):
 	return diff
 	
 input_file = sys.argv[1]
-#output_file = sys.argv[2]
+output_file = sys.argv[2]
 
 packages = {}
 previous_name = 'N/A'
@@ -24,11 +23,10 @@ previous_package_date = 'N/A'
 first_row = True
 today = date.today().strftime('%m/%d/%Y')
 
-with open(input_file, 'r') as input_csv_file:
+with open(input_file, 'r', newline='') as input_csv_file:
 	filereader = csv.reader(input_csv_file)
-	header = next(filereader, None)
+	header = next(filereader)
 	for row in filereader:
-		#print row
 		current_name = row[0]
 		current_package = row[1]
 		current_package_date = row[3]
@@ -47,23 +45,20 @@ with open(input_file, 'r') as input_csv_file:
 					packages[previous_name][previous_package] += int(diff)
 		else:
 			diff = date_diff(current_package_date, previous_package_date)
-			#print diff
 			packages[previous_name][previous_package] += int(diff)
-		#print packages
 		previous_name = current_name
 		previous_package = current_package
 		previous_package_date = current_package_date
 
 header = ['Customer Name', 'Category', 'Total Time (in Days)']
-print header
-#with open(output_file, 'wb') as output_csv_file:
-	#filewriter = csv.writer(output_csv_file)
-	#filewriter.writerow(header)
+with open(output_file, 'w', newline='') as output_csv_file:
+	filewriter = csv.writer(output_csv_file)
+	filewriter.writerow(header)
 for customer_name, customer_name_value in packages.items():
 	for package_category, package_category_value in packages[customer_name].items():
 		row_of_output = []
-		print customer_name, package_category, package_category_value
+		print(customer_name, package_category, package_category_value)
 		row_of_output.append(customer_name)
 		row_of_output.append(package_category)
 		row_of_output.append(package_category_value)
-		#filewriter.writerow(row_of_output)
+		filewriter.writerow(row_of_output)
