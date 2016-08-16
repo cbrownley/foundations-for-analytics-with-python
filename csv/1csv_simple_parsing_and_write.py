@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from string import join, split, strip
 import sys
 
 input_file = sys.argv[1]

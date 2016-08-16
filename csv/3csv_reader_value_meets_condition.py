@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import csv
-from string import strip, replace
 import sys
 
 input_file = sys.argv[1]
