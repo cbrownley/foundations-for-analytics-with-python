@@ -18,7 +18,7 @@ for workbook in all_workbooks:
 	workbook_data_frame = None
 	for worksheet_name, data in all_worksheets.items():
 		total_sales = pd.DataFrame([float(str(value).strip('$').replace(',','')) for value in data.ix[:, 'Sale Amount']]).sum()
-		number_of_sales = len(data.ix[:, 'Sale Amount'])
+		number_of_sales = len(data.loc[:, 'Sale Amount'])
 		average_sales = pd.DataFrame(total_sales / number_of_sales)
 		
 		workbook_total_sales.append(total_sales)
