@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import csv
 import sqlite3
 import sys
@@ -23,7 +23,7 @@ data = [('Richard Lucas', 'Notepad', 2.50, '2014-01-02'),
 		('Svetlana Crow', 'Printer', 155.75, '2014-02-03'),
 		('Stephen Randolph', 'Computer', 679.40, '2014-02-20')]
 for tuple in data:
-	print tuple
+	print(tuple)
 statement = "INSERT INTO sales VALUES(?, ?, ?, ?)"
 con.executemany(statement, data)
 con.commit()
@@ -35,7 +35,7 @@ for row in file_reader:
 	data = []
 	for column_index in range(len(header)):
 		data.append(row[column_index])
-	print data
+	print(data)
 	con.execute("UPDATE sales SET amount=?, date=? WHERE customer=?;", data)
 con.commit()
 
@@ -43,6 +43,7 @@ con.commit()
 cursor = con.execute("SELECT * FROM sales")
 rows = cursor.fetchall()
 for row in rows:
+	output = []
 	for column_index in range(len(row)):
-		print row[column_index],
-	print ''
+		output.append(str(row[column_index]))
+	print(output)

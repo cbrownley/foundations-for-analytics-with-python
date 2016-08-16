@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import sqlite3
 
 # Create an in-memory SQLite3 database
@@ -6,9 +6,9 @@ import sqlite3
 con = sqlite3.connect(':memory:')
 query = """CREATE TABLE sales
 			(customer VARCHAR(20), 
-				product VARCHAR(40),
-				amount FLOAT,
-				date DATE);"""
+			 product VARCHAR(40),
+			 amount FLOAT,
+			 date DATE);"""
 con.execute(query)
 con.commit()
 
@@ -28,6 +28,6 @@ rows = cursor.fetchall()
 # Count the number of rows in the output
 row_counter = 0
 for row in rows:
-	print row
+	print(row)
 	row_counter += 1
-print 'Number of rows: %d' % (row_counter)
+print('Number of rows: {}'.format(row_counter))

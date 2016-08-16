@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import csv
 import sqlite3
 import sys
@@ -27,7 +27,7 @@ for row in file_reader:
 	data = []
 	for column_index in range(len(header)):
 		data.append(row[column_index])
-	print data
+	print(data)
 	c.execute("INSERT INTO Suppliers VALUES (?, ?, ?, ?, ?);", data)
 con.commit()
 
@@ -35,6 +35,7 @@ con.commit()
 output = c.execute("SELECT * FROM Suppliers")
 rows = output.fetchall()
 for row in rows:
+	output = []
 	for column_index in range(len(row)):
-		print row[column_index],
-	print ''
+		output.append(str(row[column_index]))
+	print(output)
