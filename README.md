@@ -13,6 +13,22 @@ O'Reilly Media <br>
 Amazon <br>
 <a href="https://www.amazon.com/Foundations-Analytics-Python-Brownley/dp/1491922532">Foundations for Analytics with Python</a> <br>
 
+<b>Advance Praise</b> <br>
+"This book is a useful learning resource for new Python programmers working with data. The tutorial style and accompanying exercises will help users get their feet wet with the Python language, programming environment, and a number of the most important packages in the ecosystem." <br>
+- Wes McKinney, Creator of pandas library <br>
+
+"This is a must read book for anyone who feels limited by spreadsheets and wants to master the basics of coding and automation for business applications.  This is also good primer on programmatic approaches to conducting the most common statistical methods, incluing correlations, t-tests, and regressions." <br>
+- Rajiv Krishnamurthy, Manager, Infra Data Science, Facebook <br>
+
+"Foundations for Analytics with Python is an extremely well-written introduction to Python for analysts, giving clear and practical guidance for the new programmer. It connects principles and best-practices effectively, as if Mr. Brownley was sitting next to you, guiding you each step of the way." <br>
+- Dean Abbott, Co-Founder and Chief Data Scientist at SmarterHQ <br>
+
+"Data analysis is an essential skill for the modern professional and Clinton's book is the perfect primer to move beyond the pre-defined tools into truly flexible analytics with real code.  Even if you haven't written a single line of code before." <br>
+- Chandika Jayasundara, CEO & Co-Founder, Creately <br>
+
+"Python is widely used for data analysis -- it is in fact one of the most popular tools/languages for data analysis and data science.  Via this book, Clinton is adding to the field in a much needed manner: by teaching the reader to learn how to program as well as automate and scale their data analyses.  Everyone today would be well served to learn to code and to apply programming to data analysis.  This book serves exactly that purpose: it targets non-coders and teaches them fundamentals of Analytics using Python -- the tool of choice for data scientists today!" <br>
+- Sameer Chopra, Chief Analytics Officer, GoDaddy <br>
+
 to download
 ========================
 <b>Mac computer:</b> <br>
