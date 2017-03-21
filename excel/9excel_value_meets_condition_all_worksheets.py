@@ -24,6 +24,7 @@ with open_workbook(input_file) as workbook:
 		for row_index in range(1,worksheet.nrows):
 			row_list = []
 			sale_amount = worksheet.cell_value(row_index, sales_column_index)
+			sale_amount = float(str(sale_amount).replace('$', '').replace(',', ''))
 			if sale_amount > threshold:
 				for column_index in range(worksheet.ncols):
 					cell_value = worksheet.cell_value(row_index,column_index)
