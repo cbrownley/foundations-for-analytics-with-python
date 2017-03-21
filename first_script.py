@@ -361,7 +361,7 @@ print("Output #117: {!s}".format(a_dict.get('four')))
 print("Output #118: {!s}".format(a_dict.get('four', 'Not in dict')))
 
 # Use sorted() to sort a dictionary
-# To sort a dictionary without changing the original dictionary, 
+# To sort a dictionary without changing the original dictionary,
 # make a copy first
 print("Output #119: " + str(a_dict)
 dict_copy = a_dict.copy()
@@ -389,7 +389,7 @@ elif x > 4 and x == 5:
     print("Output #127: {}".format(x*x))
 else:
     print("Output #128: x is not greater than 4")
-    
+
 # for loop
 y = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', \
 'Nov', 'Dec']
@@ -398,7 +398,7 @@ z = ['Annie', 'Betty', 'Claire', 'Daphne', 'Ellie', 'Franchesca', 'Greta', \
 
 print("Output #129:")
 for month in y:
-    print("{!s".format(month))
+    print("{!s}".format(month))
 
 print("Output #130: (index value: name in list)")
 for i in range(len(z)):
