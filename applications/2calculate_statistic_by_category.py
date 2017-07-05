@@ -54,11 +54,11 @@ header = ['Customer Name', 'Category', 'Total Time (in Days)']
 with open(output_file, 'w', newline='') as output_csv_file:
 	filewriter = csv.writer(output_csv_file)
 	filewriter.writerow(header)
-for customer_name, customer_name_value in packages.items():
-	for package_category, package_category_value in packages[customer_name].items():
-		row_of_output = []
-		print(customer_name, package_category, package_category_value)
-		row_of_output.append(customer_name)
-		row_of_output.append(package_category)
-		row_of_output.append(package_category_value)
-		filewriter.writerow(row_of_output)
+	for customer_name, customer_name_value in packages.items():
+		for package_category, package_category_value in packages[customer_name].items():
+			row_of_output = []
+			print(customer_name, package_category, package_category_value)
+			row_of_output.append(customer_name)
+			row_of_output.append(package_category)
+			row_of_output.append(package_category_value)
+			filewriter.writerow(row_of_output)
