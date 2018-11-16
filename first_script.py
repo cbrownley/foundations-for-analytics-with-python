@@ -80,7 +80,7 @@ string1_list1 = string1.split()
 string1_list2 = string1.split(" ", 2)
 print("Output #21: {0}".format(string1_list1))
 print("Output #22: FIRST PIECE:{0} SECOND PIECE:{1} THIRD PIECE:{2}"\
-.format(string1_list2[0], string1_list2[1], string1_list2[2])
+.format(string1_list2[0], string1_list2[1], string1_list2[2]))
 
 string2 = "Your,deliverable,is,due,in,June"
 string2_list = string2.split(',')
