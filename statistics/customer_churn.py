@@ -113,7 +113,7 @@ print(cust_serv_mean_minus_one)
 print("Probability of churn when account length changes by 1: %.2f" % (inverse_logit(cust_serv_mean) - inverse_logit(cust_serv_mean_minus_one)))
 
 # Predict churn for "new" observations
-new_observations = churn.ix[churn.index.isin(xrange(10)), independent_variables.columns]
+new_observations = churn.loc[churn.index.isin(range(10)), independent_variables.columns]
 new_observations_with_constant = sm.add_constant(new_observations, prepend=True)
 y_predicted = logit_model.predict(new_observations_with_constant)
 y_predicted_rounded = [round(score, 2) for score in y_predicted]
